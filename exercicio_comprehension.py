@@ -53,14 +53,19 @@
 # Exercício: Dada uma lista de números, crie uma nova 
 # lista contendo apenas os números negativos.
 
-lista_geral = [1, -3, -4, -67, -489, 0, -10, -345, -18, 3, 90, 89, 188, 26]
-lista_num_negat = [ n for n in lista_geral if n < 1]
-print(lista_num_negat)
+# lista_geral = [1, -3, -4, -67, -489, 0, -10, -345, -18, 3, 90, 89, 188, 26]
+# lista_num_negat = [ n for n in lista_geral if n < 1]
+# print(lista_num_negat)
 
 
 # 7. Contagem de ocorrências de uma palavra em uma lista de strings
 # Exercício: Dada uma lista de frases, crie uma nova lista 
 # com a contagem de ocorrências da palavra "dados".
+
+lista_de_frases=['Tenho vários jogos de tabuleiro com dados','Quero ser engenheira de dados' ,'É preciso analisar os pontos de vistas e os dados','Eles estão jogando com dados viciados']
+
+lista_com_contagem = [elemento.lower().count('dados') for elemento in lista_de_frases]
+print(lista_com_contagem)
 
 # 8. Filtrando números que são múltiplos de 3 ou 5
 # Exercício: Dada uma lista de números, crie uma nova lista 
