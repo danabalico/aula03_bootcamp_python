@@ -44,14 +44,19 @@
 # Exercício: Dada uma lista de e-mails, crie uma nova lista 
 # contendo apenas o domínio dos e-mails (parte após o @).
 
-lista_de_emails = [ 'jornada@silva.com', 'gabriel@oliveira.silva', 'ana@balico.com', 'davi@anacleto.123']
+# lista_de_emails = [ 'jornada@silva.com', 'gabriel@oliveira.silva', 'ana@balico.com', 'davi@anacleto.123']
 
-lista_de_dominio = [email.split("@")[1] for email in lista_de_emails]
-print(lista_de_dominio)
+# lista_de_dominio = [email.split("@")[1] for email in lista_de_emails]
+# print(lista_de_dominio)
 
 # 6. Filtrando números negativos
 # Exercício: Dada uma lista de números, crie uma nova 
 # lista contendo apenas os números negativos.
+
+lista_geral = [1, -3, -4, -67, -489, 0, -10, -345, -18, 3, 90, 89, 188, 26]
+lista_num_negat = [ n for n in lista_geral if n < 1]
+print(lista_num_negat)
+
 
 # 7. Contagem de ocorrências de uma palavra em uma lista de strings
 # Exercício: Dada uma lista de frases, crie uma nova lista 
