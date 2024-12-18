@@ -35,6 +35,11 @@
 # Exercício: Dada uma lista de nomes, crie uma nova lista 
 # contendo apenas os nomes com mais de 5 letras.
 
+lista_de_nomes = ['Ana', 'Jordana', 'Gabriel', 'Maria', 'Joao', 'Arnaldo', 'Lorenzo', 'Benedita']
+Lista_maior_de_5 = [nome for nome in lista_de_nomes if len(nome) > 5]
+print(Lista_maior_de_5)
+
+
 # 5. Extraindo os domínios de e-mails
 # Exercício: Dada uma lista de e-mails, crie uma nova lista 
 # contendo apenas o domínio dos e-mails (parte após o @).
