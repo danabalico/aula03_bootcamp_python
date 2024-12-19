@@ -95,22 +95,22 @@
 # Objetivo:** Dado um conjunto de registros de vendas, 
 # calcular o total de vendas por categoria.
 
-vendas = [ 
-    {"categoria" : "eletronicos", "valor": 1200},
-    {"categoria": "livros", "valor": 50},
-    {"categoria": "joias", "valor": 200},
-    {"categoria": "livros", "valor": 450},
-    {"categoria": "eletronicos", "valor": 4323}
-]
+# vendas = [ 
+#     {"categoria" : "eletronicos", "valor": 1200},
+#     {"categoria": "livros", "valor": 50},
+#     {"categoria": "joias", "valor": 200},
+#     {"categoria": "livros", "valor": 450},
+#     {"categoria": "eletronicos", "valor": 4323}
+# ]
 
-calculo_total_por_categoria = {} #criei um dicionario vazio que será usado mais tarde 
+# calculo_total_por_categoria = {} #criei um dicionario vazio que será usado mais tarde 
 
-for item in vendas : # para cada item do dicionario vendas, faça:
-    armazena_categoria = item["categoria"] 
-    armazena_valor = item["valor"]
-    if armazena_categoria in calculo_total_por_categoria: # se armazena categoria está dentro de calculo... entao:
-        calculo_total_por_categoria[armazena_categoria] +=armazena_valor
-    else:
-        calculo_total_por_categoria[armazena_categoria] = armazena_valor
+# for item in vendas : # para cada item do dicionario vendas, faça:
+#     armazena_categoria = item["categoria"] 
+#     armazena_valor = item["valor"]
+#     if armazena_categoria in calculo_total_por_categoria: # se armazena categoria está dentro de calculo... entao:
+#         calculo_total_por_categoria[armazena_categoria] +=armazena_valor
+#     else:
+#         calculo_total_por_categoria[armazena_categoria] = armazena_valor
 
-print(calculo_total_por_categoria)
+# print(calculo_total_por_categoria)
