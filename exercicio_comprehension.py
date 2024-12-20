@@ -80,6 +80,13 @@
 # Exercício: Dado um dicionário contendo informações de usuários 
 # (nome e email), crie uma lista com os nomes dos usuários.
 
+info_usuarios = [
+    {'nome': 'maria' , 'email' : 'maria@123'},
+    {'nome': 'jose' ,'email' : 'jose@augusto'},
+    {'nome' : 'nina' , 'email' : 'nina@menina'}
+] 
+lista_de_nomes = [ nome['nome'] for nome in info_usuarios]
+print(lista_de_nomes)
 
 
 
