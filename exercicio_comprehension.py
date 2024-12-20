@@ -80,16 +80,20 @@
 # Exercício: Dado um dicionário contendo informações de usuários 
 # (nome e email), crie uma lista com os nomes dos usuários.
 
-info_usuarios = [
-    {'nome': 'maria' , 'email' : 'maria@123'},
-    {'nome': 'jose' ,'email' : 'jose@augusto'},
-    {'nome' : 'nina' , 'email' : 'nina@menina'}
-] 
-lista_de_nomes = [ nome['nome'] for nome in info_usuarios]
-print(lista_de_nomes)
+# info_usuarios = [
+#     {'nome': 'maria' , 'email' : 'maria@123'},
+#     {'nome': 'jose' ,'email' : 'jose@augusto'},
+#     {'nome' : 'nina' , 'email' : 'nina@menina'}
+# ] 
+# lista_de_nomes = [ nome['nome'] for nome in info_usuarios]
+# print(lista_de_nomes)
 
 
 
 # 10. Transformando uma lista de números em uma lista de quadrados
 # Exercício: Dada uma lista de números, crie uma nova lista com 
 # os quadrados desses números
+
+lista_de_numeros = [ 1, 2, 3, 45, 34, 20, 90, 78, 33, 10, 100, 78, 18, 9, 78,]
+nova_lista = [numero**2 for numero in lista_de_numeros]
+print(nova_lista)
