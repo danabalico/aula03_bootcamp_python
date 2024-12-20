@@ -45,20 +45,34 @@
 # Simular tentativas de reconexão a um serviço com um 
 #limite máximo de tentativas.
 
-tentativa_atual = 1
-num_max_tentativas = 10
+# tentativa_atual = 1
+# num_max_tentativas = 10
 
-while tentativa_atual <= num_max_tentativas:
-    print(f"Estamos na tentativa {tentativa_atual} de {num_max_tentativas} para reconexão ")
+# while tentativa_atual <= num_max_tentativas:
+#     print(f"Estamos na tentativa {tentativa_atual} de {num_max_tentativas} para reconexão ")
     
-    # if True: # caso tenha reconextado
-    #     print("Conexão bem sucedida")
-    #     break
-    tentativa_atual +=1
-else: 
-    print(f"Falha ao conectar após { num_max_tentativas} tentativas")
+#     # if True: # caso tenha reconectado
+#     #     print("Conexão bem sucedida")
+#     #     break
+#     tentativa_atual +=1
+# else: 
+#     print(f"Falha ao conectar após { num_max_tentativas} tentativas")
 
 
 ### Exercício 15. Processamento de Dados com Condição de Parada
 # Processar itens de uma lista até encontrar um valor 
 #específico que indica a parada.
+
+lista_de_itens = [1, 2, 'stop', 18, 9]
+
+contador = 0
+while contador < len(lista_de_itens): # ou seja, enquanto ele nao tiver
+#passado item a item da lista_de_itens
+    if lista_de_itens[contador] == 'stop':
+        print(f"Parada encontrada -> {lista_de_itens[contador]} <- encerrando o processamento. ")
+        break
+    # processa o item
+    print(f"Processando item: {lista_de_itens[contador]}")
+    contador +=1
+
+    # aqui o sistema lidou com a paragem primeiro, depois incrementou
