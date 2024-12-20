@@ -62,18 +62,26 @@
 # Exercício: Dada uma lista de frases, crie uma nova lista 
 # com a contagem de ocorrências da palavra "dados".
 
-lista_de_frases=['Tenho vários jogos de tabuleiro com dados','Quero ser engenheira de dados' ,'É preciso analisar os pontos de vistas e os dados','Eles estão jogando com dados viciados']
+# lista_de_frases=['Tenho vários jogos de tabuleiro com dados','Quero ser engenheira de dados' ,'É preciso analisar os pontos de vistas e os dados','Eles estão jogando com dados viciados']
 
-lista_com_contagem = [elemento.lower().count('dados') for elemento in lista_de_frases]
-print(lista_com_contagem)
+# lista_com_contagem = [elemento.lower().count('dados') for elemento in lista_de_frases]
+# print(lista_com_contagem)
 
 # 8. Filtrando números que são múltiplos de 3 ou 5
 # Exercício: Dada uma lista de números, crie uma nova lista 
 # contendo apenas os números que são múltiplos de 3 ou 5.
 
+# numero_em_geral = [ 1, 3, 5, 6, 45, 34, 2, 33, 78, 90, 18, 55, 90, 100, 30, 66]
+# numero_multiplos = [ n for n in numero_em_geral if n %3 == 0 or n % 5 == 0]
+# print (numero_multiplos)
+
+
 # 9. Extraindo o nome dos usuários de um dicionário de dados
 # Exercício: Dado um dicionário contendo informações de usuários 
 # (nome e email), crie uma lista com os nomes dos usuários.
+
+
+
 
 # 10. Transformando uma lista de números em uma lista de quadrados
 # Exercício: Dada uma lista de números, crie uma nova lista com 
