@@ -29,14 +29,14 @@
 #onde cada "página" de dados é processada em loop até 
 #que não haja mais páginas.
 
-pagina_atual = 1
-paginas_totais = 3
+# pagina_atual = 1
+# paginas_totais = 3
 
-while pagina_atual <= paginas_totais:
-    print(f"Processando a página {pagina_atual} de { paginas_totais}")
-    pagina_atual +=1
+# while pagina_atual <= paginas_totais:
+#     print(f"Processando a página {pagina_atual} de { paginas_totais}")
+#     pagina_atual +=1
 
-print ("Todas as páginas foram processadas")
+# print ("Todas as páginas foram processadas")
 
 
 
@@ -44,6 +44,20 @@ print ("Todas as páginas foram processadas")
 ### Exercício 14. Tentativas de Conexão
 # Simular tentativas de reconexão a um serviço com um 
 #limite máximo de tentativas.
+
+tentativa_atual = 1
+num_max_tentativas = 10
+
+while tentativa_atual <= num_max_tentativas:
+    print(f"Estamos na tentativa {tentativa_atual} de {num_max_tentativas} para reconexão ")
+    
+    # if True: # caso tenha reconextado
+    #     print("Conexão bem sucedida")
+    #     break
+    tentativa_atual +=1
+else: 
+    print(f"Falha ao conectar após { num_max_tentativas} tentativas")
+
 
 ### Exercício 15. Processamento de Dados com Condição de Parada
 # Processar itens de uma lista até encontrar um valor 
