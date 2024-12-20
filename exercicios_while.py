@@ -4,15 +4,25 @@
 # Ler dados de entrada até que uma palavra-chave 
 #específica ("sair") seja fornecida.
 
-dados = [] # fazer uma lista vazia
-input_usuario = "" # iniciamos a variavel para nao dar erro no loop
-while input_usuario.lower() != 'sair':
-    input_usuario = input("Digite um valor ( ou 'sair' para terminar): ")
+# dados = [] # fazer uma lista vazia
+# input_usuario = "" # iniciamos a variavel para nao dar erro no loop
+# while input_usuario.lower() != 'sair':
+#     input_usuario = input("Digite um valor ( ou 'sair' para terminar): ")
     
 
 ### Exercício 12. Validação de Entrada
 # Solicitar ao usuário um número dentro de 
 #um intervalo específico até que a entrada seja válida.
+
+numero = int(input("Digite um número entre 0 e 10: "))
+
+while numero < 0 or numero > 10:
+    print("Número fora do intervalo!")
+    numero = int (input("Por favor, digite um número entre 0 e 10: "))
+
+print("Dados válidos") # se nao entrar no while vai mostrar isso
+
+    
 
 ### Exercício 13. Consumo de API Simulado
 # Simular o consumo de uma API paginada, 
