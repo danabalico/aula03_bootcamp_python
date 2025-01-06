@@ -30,7 +30,33 @@
 
 # print("Data válida inserida: ", data_usuario)
 
+# 3. Monitorar tamanho de arquivos (Versão Júnior)
+# Enunciado:
+# Crie um programa que peça ao usuário para inserir os tamanhos 
+# de arquivos (em MB). O programa deve parar de pedir tamanhos 
+# quando o total de todos os tamanhos somados for maior que 500 MB. 
+# No final, exiba o total e os tamanhos inseridos
 
+tamanho_do_arquivo = []
+tamanho_total = 0
+
+
+while tamanho_total <= 500:
+    try:
+        tamanho = float(input("Digite o tamanho do seu arquivo: "))
+        tamanho_do_arquivo.append(tamanho)
+        tamanho_total+= tamanho
+    except ValueError:
+        print("Por favor, insira um número válido. ")
+
+print(f"Tamanhos inseridos:{tamanho_do_arquivo}")
+print(f"Total de tamanho dos arquivos : { tamanho_total : .2f} MB")
+    
+
+# explicação:
+# vamos colocando os valores digitadoes em tamanho_do_arquivo
+#criamos a variável "tamanho" para receber os valores
+#a variavel "tamanho total" auxilia na soma 
 
 
 
